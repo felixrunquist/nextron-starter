@@ -18,6 +18,11 @@ if (isProd) {
   const mainWindow = createWindow('main', {
     width: 1000,
     height: 600,
+    // remove the default titlebar
+    titleBarStyle: 'hidden',
+    trafficLightPosition: { x: 10, y: 10 }, // Adjust position of traffic lights on Mac
+    // expose window controlls in Windows/Linux
+    ...(process.platform !== 'darwin' ? { titleBarOverlay: true } : {}),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     },

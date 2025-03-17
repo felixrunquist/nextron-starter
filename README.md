@@ -1,38 +1,12 @@
-<p align="center"><img src="https://i.imgur.com/BgFze6G.png"></p>
+# Nextron-Electron
 
-## Usage
+This is a boilerplate for using React with Next.js using Nextron.
 
-### Create an App
+## Installing dependencies
+Run `npm install`. 
 
-```
-# with npx
-$ npx create-nextron-app my-app --example basic-store-data
+## Development
+Run `yarn dev`. 
 
-# with yarn
-$ yarn create nextron-app my-app --example basic-store-data
-
-# with pnpm
-$ pnpm dlx create-nextron-app my-app --example basic-store-data
-```
-
-### Install Dependencies
-
-```
-$ cd my-app
-
-# using yarn or npm
-$ yarn (or `npm install`)
-
-# using pnpm
-$ pnpm install --shamefully-hoist
-```
-
-### Use it
-
-```
-# development mode
-$ yarn dev (or `npm run dev` or `pnpm run dev`)
-
-# production build
-$ yarn build (or `npm run build` or `pnpm run build`)
-```
+## Building
+Run `yarn build`. 
